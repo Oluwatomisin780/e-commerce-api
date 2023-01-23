@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const orderModel = new Schema({
   phoneNumber: {
     type: Number,
-    required: true,
+    require: true,
   },
   lesson: {
     type: mongoose.Schema.Types.ObjectId,

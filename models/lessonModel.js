@@ -3,21 +3,25 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const lessonSchema = new Schema({
-  topic: {
+  name: {
     type: String,
-    required: true,
+    require: true,
   },
   price: {
     type: Number,
-    required: true,
+    require: true,
   },
   space: {
     type: Number,
-    required: true,
+    require: true,
   },
   location: {
     type: String,
-    required: true,
+    require: true,
+  },
+  image: {
+    type: String,
+    require: true,
   },
 });
 
